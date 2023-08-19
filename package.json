@@ -1,6 +1,6 @@
 {
   "name": "daily_parser",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Peg.js parser for daily standup notes",
   "main": "dist/index.js",
   "scripts": {
@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/StoneCypher/daily_parser/issues"
   },
-  "homepage": "https://github.com/StoneCypher/daily_parser#readme"
+  "homepage": "https://github.com/StoneCypher/daily_parser#readme",
+  "devDependencies": {
+    "pegjs": "^0.10.0"
+  }
 }
