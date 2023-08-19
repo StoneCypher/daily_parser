@@ -1,0 +1,29 @@
+{
+  "name": "daily_parser",
+  "version": "0.1.0",
+  "description": "Peg.js parser for daily standup notes",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StoneCypher/daily_parser.git"
+  },
+  "keywords": [
+    "daily",
+    "standup",
+    "notes",
+    "peg",
+    "peg.js",
+    "parser",
+    "markdown",
+    "stonecypher"
+  ],
+  "author": "John Haugeland <stonecypher@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StoneCypher/daily_parser/issues"
+  },
+  "homepage": "https://github.com/StoneCypher/daily_parser#readme"
+}
