@@ -1,10 +1,14 @@
 {
   "name": "daily_parser",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Peg.js parser for daily standup notes",
-  "main": "dist/index.js",
+  "main": "dist/parser_en_us.js",
   "scripts": {
-    "test": "jest"
+    "clean": "rimraf docs && mkdir docs && cd docs && mkdir docs && cd .. && rimraf dist && mkdir dist",
+    "site": "cp -r ./src/site/* ./docs && cp -r ./src/site/.nojekyll ./docs",
+    "pegjs": "pegjs -o ./dist/parser_en_us.js ./src/peg/parser_en_us.pegjs",
+    "test": "jest",
+    "build": "npm run clean && npm run site && npm run pegjs && npm run test"
   },
   "repository": {
     "type": "git",
@@ -27,6 +31,8 @@
   },
   "homepage": "https://github.com/StoneCypher/daily_parser#readme",
   "devDependencies": {
-    "pegjs": "^0.10.0"
+    "jest": "^29.6.2",
+    "pegjs": "^0.10.0",
+    "rimraf": "^5.0.1"
   }
 }
