@@ -1,6 +1,6 @@
 {
   "name": "daily_parser",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Peg.js parser for daily standup notes",
   "main": "dist/index.js",
   "scripts": {
